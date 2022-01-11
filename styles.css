@@ -3,8 +3,64 @@ a {
     color: inherit;
 }
 
+#title {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+    color: rgb(252, 252, 247);
+    text-align: center;
+    margin: 0;
+}
+
+#moon-box {
+    display: flex;
+    width: 40rem;
+    position: absolute;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+
+.left-moon {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: -25px 10px 0px 0px rgb(238, 238, 219);
+  }
+
+  .right-moon {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px rgb(238, 238, 219);
+  }
+
+p {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 200;
+    color: rgb(252, 252, 247);
+}
+
+body {
+    background-color: #00034c;
+}
+
 .project-row {
     display: flex;
+    width: 50%;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-left: 22%;
+}
+
+.icon-container {
+    display: flex;
+    width: 10rem;
+ 
 }
 
 .icon {
@@ -12,34 +68,36 @@ a {
 }
 
 #lobster:hover + #lobster-description, #lobster-description:hover {
-    display: inline;
+    display: flex;
 }
 
 #blem:hover + #blem-description, #blem-description:hover {
-    display: inline;
+    display: flex;
 }
 
 #dream-machine:hover + #dream-machine-description, #dream-machine-description:hover {
-    display: inline;
+    display: flex;
 }
 
 #simp-bot:hover + #simp-bot-description, #simp-bot-description:hover {
-    display: inline;
+    display: flex;
 }
 
 .description {
     display: none;
     font-size: 2.5rem;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    color: #00034C;
     margin: 0;
     background-color: rgba(255, 255, 255, 0.4);
-    width: 6rem;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.4);
+    width: 10rem;
     height: 10rem;
     position: relative;
-    left: -10rem;
-    top: 2rem;
-}
-
-.icon-container {
-    display: flex;
-    width: 10rem;
+    left: -13rem;
+    top: 1.5rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    text-align: center;
 }

@@ -1,3 +1,10 @@
 repeat lines 14-16 w other objets d'art
 
 whack that in the html
+
+
+
+
+**
+Deploy dream machine
+Deploy simpbot
