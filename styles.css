@@ -1,14 +1,24 @@
+:root {
+    --title-height: 24%;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 body {
-    background-color: #ffd0d0;
+    background-color: #ffecec;
 }
 
 #title {
     text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: #ffd0d0;
+    margin: 0;
+    top: 0;
+    left: 0;
 }
 
 h1 {
@@ -21,7 +31,7 @@ h1 {
 
 #moon-box {
     display: flex;
-    width: 40rem;
+    width: 60%;
     justify-content: space-between;
     margin-left: 20%;
 }
@@ -42,17 +52,41 @@ h1 {
     box-shadow: 25px 10px 0px 0px #881616;
   }
 
+#link-container p {
+    margin: 0;
+}
+
 p {
     font-family: 'Inconsolata', monospace;
     color: #c04343;
 }
 
-/*#heart {
+.holder {
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 50px;
+    margin-left: 25%; /* change this for length of wiggly */ 
+    top: 30px;
+  }
+  
+  .ellipse {
     position: absolute;
-    font-size: 500px;
-    opacity: 30%;
-    margin-top: -10%;
-}*/
+    background: radial-gradient(ellipse, transparent, transparent 7px,  7px, #881616 10px, transparent 11px);
+    background-size: 36px 40px;
+    width: 100%;
+    height: 20px;
+  }
+  
+  .ellipse2 {
+    top: 20px;
+    left: 18px;
+    background-position: 0px -20px;
+  }
+
+#project-table {
+    margin-top: 18%;
+}
 
 .project-row {
     display: flex;
@@ -93,6 +127,7 @@ p {
     font-size: 2.5rem;
     font-family: 'Inconsolata', monospace;
     text-transform: uppercase;
+    text-overflow: break-word;
     color: #b12626;
     margin: 0;
     background-color: rgba(255, 255, 255, 0.4);
